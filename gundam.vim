@@ -11,12 +11,36 @@ endif
 let g:colors_name = "gundam"
 
 " Console
-highlight Normal     ctermfg=white	ctermbg=Black
-highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
-highlight Visual					cterm=reverse
-highlight Cursor     ctermfg=Black	ctermbg=Green	cterm=bold
-highlight Special    ctermfg=Red
-highlight Comment    ctermfg=DarkBlue
-highlight StatusLine ctermfg=Blue	ctermbg=white
-highlight Statement  ctermfg=Yellow			cterm=NONE
-highlight Type						cterm=NONE
+hi Constant	    ctermfg=DarkBlue
+hi Comment	    ctermfg=DarkGrey
+hi Special	    ctermfg=DarkYellow
+hi Identifier   ctermfg=Yellow
+hi Statement 	ctermfg=Red
+hi PreProc		ctermfg=DarkBlue
+hi Type         ctermfg=Yellow
+hi Function		ctermfg=Grey
+hi Repeat       ctermfg=White
+hi Operator	    ctermfg=Red
+hi Error        ctermfg=White ctermbg=Red
+
+hi link String	        Constant
+hi link Character	    Constant
+hi link Number	        Constant
+hi link Boolean	        Constant
+hi link Float		    Number
+hi link Conditional	    Repeat
+hi link Label		    Statement
+hi link Keyword	        Statement
+hi link Exception	    Statement
+hi link Include	        PreProc
+hi link Define	        PreProc
+hi link Macro		    PreProc
+hi link PreCondit	    PreProc
+hi link StorageClass	Type
+hi link Structure	    Type
+hi link Typedef	        Type
+hi link Tag		        Special
+hi link SpecialChar	    Special
+hi link Delimiter	    Special
+hi link SpecialComment  Special
+hi link Debug		    Special
